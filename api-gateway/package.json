@@ -1,0 +1,24 @@
+{
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "ts-node-dev --respawn index.dev.ts"
+  },
+  "author": "Tiago Perrelli",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-datasource-rest": "^3.5.1",
+    "apollo-server": "^3.6.2",
+    "dotenv-safe": "^8.2.0",
+    "graphql": "^16.3.0"
+  },
+  "devDependencies": {
+    "module-alias": "^2.2.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  },
+  "_moduleAliases": {
+    "#root": "./src"
+  }
+}

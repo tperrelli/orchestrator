@@ -1,0 +1,5 @@
+type Download {
+    photoId: String
+    customerId: String
+    totalDownloads: Int
+}

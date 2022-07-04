@@ -1,0 +1,17 @@
+https://blog.appsignal.com/2020/06/03/building-apis-with-graphql-in-your-node-application.html
+
+
+loading schemas
+https://www.graphql-tools.com/docs/schema-loading
+
+gql microservices
+    https://blog.logrocket.com/improve-microservice-architecture-graphql-api-gateways/
+
+redis subscription
+https://www.npmjs.com/package/graphql-redis-subscriptions
+
+full api gateways
+https://dev.to/bettercodingacademy/full-tutorial-4-setting-up-the-authentication-endpoint-microservices-chat-app-using-react-node-js-typescript-and-graphql-3a4n
+
+apollo GQL Server
+https://medium.com/tkssharma/an-api-gateway-is-a-microservice-pattern-where-a-separate-service-is-built-to-sit-in-front-of-your-be4b16861d40

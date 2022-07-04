@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  api-gateway:
+    container_name: api-gateway
+    build:
+      context: './api-gateway'
+    links:
+      - user-service
+      - download-service
+    ports:
+      - 3000:3000
+    volumes:
+      - ./api-gateway:/usr/app
+
+  user-service:
+    container_name: user-service
+    build:
+      context: './user-service'
+    links:
+      - user-service-db
+    ports:
+      - 3001:3001
+    volumes:
+      - ./user-service:/usr/app
+
+  user-service-db:
+    container_name: user-service-db
+    image: mysql:5.7.20
+    ports:
+      - "7200:3306"
+    environment:
+      - "MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}"
+      - "MYSQL_DATABASE=${MYSQL_DATABASE}"
+
+  download-service:
+    container_name: download-service
+    build:
+      context: './download-service'
+    ports:
+      - 3002:3002
+    volumes:
+      - ./download-service:/usr/app
